@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MySearchWidget demo page</title>
+</head>
+
+<body>
+    <script>
+        $ = 'Ooooops';
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        jQuery.noConflict();
+    </script>
+    <script src="./my-search-widget.js"></script>
+    <script>
+        jQuery('.msw-widget').mySearchWidget({
+
+        });
+        jQuery('.msw-widget').mySearchWidget({
+            limit:10,
+            type:"google-books"
+        });
+        jQuery('.msw-widget').mySearchWidget({
+            limit:31,
+            type:"google-books"
+        });
+    </script>
+</body>
+
+</html>
